@@ -3,7 +3,7 @@ from .models import Movie
 
 class MovieSerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
-    title = serializers.CharField(required=True)
+    title = serializers.CharField()
     description = serializers.CharField(required=False)
     duration = serializers.IntegerField()
 
